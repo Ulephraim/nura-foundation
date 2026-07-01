@@ -6,6 +6,13 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import ScrollManager from "./components/UI/ScrollManager";
 import NotFoundPage from "./pages/NotFound";
+import OurPrograms from "./pages/OurPrograms";
+import ContactUs from "./pages/ContactUs";
+import OurTeam from "./pages/OurTeam";
+import Overview from "./pages/Overview";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
+import Donate from "./pages/Donate";
 
 function App() {
   useEffect(() => {
@@ -21,6 +28,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/our-programs" element={<OurPrograms />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/our-team" element={<OurTeam />} />
+        <Route path="/overview" element={<Overview />} />
+        <Route path="/donate" element={<Donate />} />
+
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<Terms />} />
+
+        <Route path="/" element={<Home />} />
       </Routes>
     </>
   );

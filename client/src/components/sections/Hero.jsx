@@ -12,6 +12,7 @@ const HeroSlider = () => {
       subtitle:
         "NURA Foundation is committed to rebuilding and reforming Nigeria through peace, unity, mentorship, and youth empowerment.",
       cta: "Join The Movement",
+      link: "/contact-us",
     },
     {
       id: 2,
@@ -20,6 +21,7 @@ const HeroSlider = () => {
       subtitle:
         "We inspire positive change through anti-terrorism awareness, leadership development, and community impact initiatives.",
       cta: "Explore Our Programs",
+      link: "/our-programs",
     },
     {
       id: 3,
@@ -28,6 +30,7 @@ const HeroSlider = () => {
       subtitle:
         "Through mentorship, innovation, and financial empowerment, we are building a stronger future for Nigerian youths.",
       cta: "Support Our Mission",
+      link: "/donate",
     },
   ];
 
@@ -93,7 +96,7 @@ const HeroSlider = () => {
                   </p>
 
                   <Link
-                    to="/about"
+                    to={slide.link}
                     className="inline-block bg-[#0E5A00] hover:bg-[#0B4600] text-white px-8 py-3.5 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 "
                   >
                     {slide.cta}

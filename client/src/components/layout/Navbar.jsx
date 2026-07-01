@@ -4,9 +4,9 @@ import { LOGOS } from "../../shared/assets/logo";
 
 const navLinks = [
   { label: "About Us", href: "#about", dropdown: true },
-  { label: "Our Programs", href: "#whatwedo", dropdown: true },
-  { label: "Get Involved", href: "#career", dropdown: true },
-  { label: "Contact", href: "#contact" },
+  { label: "Our Programs", href: "our-programs" },
+  // { label: "Get Involved", href: "contact-us" },
+  { label: "Contact Us", href: "contact-us" },
 ];
 
 const Navbar = () => {
@@ -62,21 +62,15 @@ const Navbar = () => {
                   <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <div className="py-2">
                       <a
-                        href="#about"
+                        href="overview"
                         className="block px-4 py-2 text-sm text-gray-600 hover:text-[#0E5A00] hover:bg-emerald-50 transition-colors"
                         onClick={() => setMobileMenuOpen(false)}
                       >
-                        Who We Are
+                        Overview
                       </a>
+
                       <a
-                        href="#about"
-                        className="block px-4 py-2 text-sm text-gray-600 hover:text-[#0E5A00] hover:bg-emerald-50 transition-colors"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        Mission & Vision
-                      </a>
-                      <a
-                        href="#career"
+                        href="our-team"
                         className="block px-4 py-2 text-sm text-gray-600 hover:text-[#0E5A00] hover:bg-emerald-50 transition-colors"
                         onClick={() => setMobileMenuOpen(false)}
                       >
@@ -91,7 +85,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center">
             <a
-              href="#donate"
+              href="/donate"
               className="text-white px-4 sm:px-5 md:px-6 py-1.5 sm:py-2 rounded-full text-sm sm:text-base font-medium transition-all hover:opacity-90 hover:scale-105 transform shadow-md whitespace-nowrap"
               style={{ backgroundColor: brandColor }}
             >
@@ -132,21 +126,15 @@ const Navbar = () => {
                     {activeDropdown === link.label && (
                       <div className="pl-4 space-y-2 border-l-2 border-emerald-200 ml-2 mt-2">
                         <a
-                          href="#about"
+                          href="overview"
                           className="block text-sm text-gray-600 hover:text-[#0E5A00] py-2.5 px-2 rounded-lg hover:bg-gray-50 transition-colors"
                           onClick={() => setMobileMenuOpen(false)}
                         >
-                          Who We Are
+                          Overview
                         </a>
+
                         <a
-                          href="#about"
-                          className="block text-sm text-gray-600 hover:text-[#0E5A00] py-2.5 px-2 rounded-lg hover:bg-gray-50 transition-colors"
-                          onClick={() => setMobileMenuOpen(false)}
-                        >
-                          Mission & Vision
-                        </a>
-                        <a
-                          href="#career"
+                          href="our-team"
                           className="block text-sm text-gray-600 hover:text-[#0E5A00] py-2.5 px-2 rounded-lg hover:bg-gray-50 transition-colors"
                           onClick={() => setMobileMenuOpen(false)}
                         >
@@ -169,7 +157,7 @@ const Navbar = () => {
 
             <div className="pt-4 pb-6">
               <a
-                href="#donate"
+                href="/donate"
                 className="block text-center bg-[#0E5A00] hover:bg-[#0B4600] text-white rounded-full px-5 py-3 text-base font-medium transition-all active:scale-95"
                 onClick={() => setMobileMenuOpen(false)}
               >
