@@ -22,6 +22,7 @@ import {
   MapPin,
 } from "lucide-react";
 import { IMAGES } from "../shared/assets/images";
+import Gallery from "../components/sections/Gallery";
 
 const Overview = () => {
   const brandPrimary = "#0E5A00";
@@ -184,6 +185,8 @@ const Overview = () => {
             </div>
           </div>
         </section>
+
+        <Gallery />
 
         {/* Focus Areas Section */}
         <section className="py-16 bg-white">
