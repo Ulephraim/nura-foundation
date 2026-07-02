@@ -25,7 +25,7 @@ const OurTeam = () => {
       position: "Founder in Chief",
       role: "Executive Leadership",
       image: IMAGES.Team9,
-      bio: "Leading NURA Foundation's strategic direction and media outreach across Nigeria.",
+      bio: "NURA Foundation's strategic direction on Board of Directors",
       icon: <Crown className="w-5 h-5" />,
     },
     {

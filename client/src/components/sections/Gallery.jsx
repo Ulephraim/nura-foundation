@@ -55,7 +55,11 @@ const GALLERY_IMAGES = [
       "Bauchi Lassa Fever Outreach, -Dass Local government, Bauchi State. ",
   },
   { id: 11, src: IMAGES.gallery11, caption: "Bauchi State Empowerment Drive" },
-  { id: 12, src: IMAGES.gallery12, caption: "School visitation- Bauchi" },
+  {
+    id: 12,
+    src: IMAGES.gallery12,
+    caption: "Covid-19 Sensitisation School visitation- Bauchi",
+  },
   { id: 13, src: IMAGES.gallery13, caption: "School visitation- Bauchi" },
   { id: 14, src: IMAGES.gallery14, caption: "School Outreach- Ogun State" },
   {
@@ -73,6 +77,16 @@ const GALLERY_IMAGES = [
     id: 19,
     src: IMAGES.gallery19,
     caption: "Child Protection Program",
+  },
+  {
+    id: 20,
+    src: IMAGES.gallery20,
+    caption: " Strategic sSchool outreach- Iyana Isolo Lagos",
+  },
+  {
+    id: 21,
+    src: IMAGES.gallery21,
+    caption: "strategic school outreach- Iyana Isolo Lagos",
   },
 ];
 
