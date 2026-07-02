@@ -80,13 +80,32 @@ const ContactUs = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormStatus({ submitted: false, loading: true, error: null });
 
-    setTimeout(() => {
-      setFormStatus({ submitted: true, loading: false, error: null });
-      setTimeout(() => {
+    setFormStatus({
+      submitted: false,
+      loading: true,
+      error: null,
+    });
+
+    try {
+      const response = await fetch("https://formspree.io/f/mojoknqo", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setFormStatus({
+          submitted: true,
+          loading: false,
+          error: null,
+        });
+
         setFormData({
           name: "",
           email: "",
@@ -94,9 +113,32 @@ const ContactUs = () => {
           subject: "",
           message: "",
         });
-        setFormStatus({ submitted: false, loading: false, error: null });
-      }, 3000);
-    }, 1500);
+
+        setTimeout(() => {
+          setFormStatus({
+            submitted: false,
+            loading: false,
+            error: null,
+          });
+        }, 3000);
+      } else {
+        const data = await response.json();
+
+        setFormStatus({
+          submitted: false,
+          loading: false,
+          error:
+            data?.errors?.[0]?.message ||
+            "Something went wrong. Please try again.",
+        });
+      }
+    } catch (error) {
+      setFormStatus({
+        submitted: false,
+        loading: false,
+        error: "Network error. Please check your connection and try again.",
+      });
+    }
   };
 
   return (
