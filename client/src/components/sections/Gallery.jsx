@@ -88,6 +88,11 @@ const GALLERY_IMAGES = [
     src: IMAGES.gallery21,
     caption: "strategic school outreach- Iyana Isolo Lagos",
   },
+  {
+    id: 21,
+    src: IMAGES.gallery22,
+    caption: "Nura Foundation Outreach",
+  },
 ];
 
 const Gallery = () => {

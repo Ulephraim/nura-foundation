@@ -333,22 +333,22 @@ const Home = () => {
               <div className="flex-1 relative">
                 <div className="grid grid-cols-2 gap-3">
                   <img
-                    src={IMAGES.Home1}
+                    src={IMAGES.Home3}
                     alt="Nigerian youth"
                     className="rounded-2xl w-full h-48 object-cover"
                   />
                   <img
-                    src={IMAGES.Home2}
+                    src={IMAGES.gallery8}
                     alt="Community"
                     className="rounded-2xl w-full h-48 object-cover mt-6"
                   />
                   <img
-                    src={IMAGES.Home3}
+                    src={IMAGES.gallery17}
                     alt="Team work"
                     className="rounded-2xl w-full h-48 object-cover -mt-6"
                   />
                   <img
-                    src={IMAGES.Home1}
+                    src={IMAGES.gallery22}
                     alt="Peace initiative"
                     className="rounded-2xl w-full h-48 object-cover"
                   />

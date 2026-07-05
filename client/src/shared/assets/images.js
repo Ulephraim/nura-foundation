@@ -38,6 +38,7 @@ import gallery18 from "../../assets/images/gallery-18.jpg";
 import gallery19 from "../../assets/images/gallery-19.jpg";
 import gallery20 from "../../assets/images/gallery-20.jpg";
 import gallery21 from "../../assets/images/gallery-21.jpg";
+import gallery22 from "../../assets/images/gallery-22.jpg";
 
 export const IMAGES = {
   gallery1,
@@ -61,6 +62,7 @@ export const IMAGES = {
   gallery19,
   gallery20,
   gallery21,
+  gallery22,
 
   Home1,
   Home2,

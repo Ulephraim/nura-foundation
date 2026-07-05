@@ -12,7 +12,7 @@ import OurTeam from "./pages/OurTeam";
 import Overview from "./pages/Overview";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
-import Donate from "./pages/Donate";
+import SupportUs from "./pages/SupportUs";
 
 function App() {
   useEffect(() => {
@@ -32,7 +32,7 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/our-team" element={<OurTeam />} />
         <Route path="/overview" element={<Overview />} />
-        <Route path="/donate" element={<Donate />} />
+        <Route path="/support-us" element={<SupportUs />} />
 
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />

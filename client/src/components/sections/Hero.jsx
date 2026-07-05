@@ -30,7 +30,7 @@ const HeroSlider = () => {
       subtitle:
         "Through mentorship, innovation, and financial empowerment, we are building a stronger future for Nigerian youths.",
       cta: "Support Our Mission",
-      link: "/donate",
+      link: "/support-us",
     },
   ];
 

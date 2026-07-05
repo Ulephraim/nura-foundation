@@ -22,7 +22,7 @@ const NotFoundPage = () => {
     { label: "About Us", path: "/about" },
     { label: "Our Programs", path: "/our-programs" },
     { label: "Contact", path: "/contact-us" },
-    { label: "Donate", path: "/donate" },
+    { label: "Support Us", path: "/support-us" },
   ];
 
   return (

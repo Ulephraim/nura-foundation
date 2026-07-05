@@ -85,11 +85,11 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center">
             <a
-              href="/donate"
+              href="/support-us"
               className="text-white px-4 sm:px-5 md:px-6 py-1.5 sm:py-2 rounded-full text-sm sm:text-base font-medium transition-all hover:opacity-90 hover:scale-105 transform shadow-md whitespace-nowrap"
               style={{ backgroundColor: brandColor }}
             >
-              Donate Now
+              Support Us
             </a>
           </div>
 
@@ -157,11 +157,11 @@ const Navbar = () => {
 
             <div className="pt-4 pb-6">
               <a
-                href="/donate"
+                href="/support-us"
                 className="block text-center bg-[#0E5A00] hover:bg-[#0B4600] text-white rounded-full px-5 py-3 text-base font-medium transition-all active:scale-95"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Donate Now
+                Support Us
               </a>
             </div>
           </div>

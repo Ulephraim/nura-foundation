@@ -151,14 +151,14 @@ const Footer = () => {
 
                 <li>
                   <a
-                    href="/donate"
+                    href="/support-us"
                     className="text-gray-400 hover:text-[#0E5A00] transition-colors flex items-center gap-2 group"
                   >
                     <ChevronRight
                       size={12}
                       className="opacity-0 group-hover:opacity-100 transition-all -ml-2 group-hover:ml-0"
                     />
-                    Donate
+                    Support Us
                   </a>
                 </li>
               </ul>
